@@ -21,7 +21,7 @@ public class Lancamento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	private String descritao;
+	private String descricao;
 	
 	@Column(name = "data_vencimento")
 	private LocalDate dataVencimento;
@@ -31,7 +31,7 @@ public class Lancamento {
 	
 	private BigDecimal valor;
 	
-	private String obsevacao;
+	private String observacao;
 	
 	@Enumerated(EnumType.STRING)
 	private TipoLancamento tipo;
@@ -52,12 +52,12 @@ public class Lancamento {
 		this.codigo = codigo;
 	}
 
-	public String getDescritao() {
-		return descritao;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescritao(String descritao) {
-		this.descritao = descritao;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public LocalDate getDataVencimento() {
@@ -84,12 +84,12 @@ public class Lancamento {
 		this.valor = valor;
 	}
 
-	public String getObsevacao() {
-		return obsevacao;
+	public String getObservacao() {
+		return observacao;
 	}
 
-	public void setObsevacao(String obsevacao) {
-		this.obsevacao = obsevacao;
+	public void setObservacao(String observacao) {
+		this.observacao = observacao;
 	}
 
 	public TipoLancamento getTipo() {
